@@ -286,6 +286,7 @@ main {
 /*Width of the description box into the footer of the left container */
 
     .result-description-container {
+        margin-bottom: 10px;
         overflow: hidden;
         height: 35%;
         width: 100%;
@@ -303,8 +304,8 @@ main {
 
     .right-container h1 {
         width: 70vw;
-        font-size: 1.4rem;
-        margin: 5px 0px;
+        font-size: 1.2rem;
+        margin: initial;
     }
 
 /*Controll of the four boxes into the right container*/
