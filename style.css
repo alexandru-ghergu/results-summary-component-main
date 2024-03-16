@@ -260,23 +260,35 @@ main {
     .left-container {
         margin: auto;
         gap: 15px;
-        height: 45vh;
+        height: 40vh;
         width: 100vw;
         border-radius: 0px 0px 25px 25px;
+    }
+
+    .left-container h1 {
+        margin-top: 5vw;
     }
 
 /*Position and style of the left container circle box with the result of the test*/
 
     .result-container {
-        margin: 25px 0px 10px 0px;
-        height: 10rem;
-        width: 10rem;
+        margin: initial;
+        height: 8rem;
+        width: 8rem;
+    }
+    
+/*Style of the first number of the left container circle box*/
+
+    .result-container p:nth-child(1) {
+        font-size: 3rem;
     }
 
 /*Width of the description box into the footer of the left container */
 
     .result-description-container {
+        margin: auto;
         overflow: hidden;
+        height: 35%;
         width: 100%;
     }
 
@@ -290,6 +302,7 @@ main {
     }
 
     .right-container h1 {
+        overflow: hidden;
         margin-right: 46vw;
     }
 

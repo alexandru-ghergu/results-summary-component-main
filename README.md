@@ -9,7 +9,7 @@ This is my first solution to the [Results summary component challenge on Fronten
 
 ## 🎥 Live WebSite
 
-- [Live site URL](https://alexandru-ghergu.github.io/recipe-page-main/)
+- [Live site URL](https://alexandru-ghergu.github.io/results-summary-component-main/)
 
 ## 🪄 Technologies
 
