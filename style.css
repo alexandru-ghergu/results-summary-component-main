@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Hanken Grotesk", sans-serif;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    caret-color: transparent;
+}
+
+/*Background shadow of the left and right container*/
+
+.container-shadow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 10px 100px 100px hsl(241, 100%, 89%, 0.4);
+    background-color: hsl(241, 100%, 89%, 0.4)
+}
+
+/*Position and style of the left container*/
+
+.left-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    z-index: 2;
+    height: 30rem;
+    width: 22rem;
+    gap: 30px;
+    border-radius: 25px;
+    padding: 0px 70px;
+    background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+/*Font control of the left container header*/
+
+.left-container h1 {
+    width: 100vw;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: hsl(241, 100%, 89%, 0.8);
+}
+
+/*Position and style of the left container circle box with the result of the test*/
+
+.result-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 50%;
+    height: 12rem;
+    width: 12rem;
+    background-image: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+}
+
+/*Style of the first number of the left container circle box*/
+
+.result-container p:nth-child(1) {
+    font-size: 4rem;
+    font-weight: 800;
+    color: hsl(0, 0%, 100%);
+}
+
+/*Style of the second number of the left container circle box*/
+
+.result-container p:nth-child(2) {
+    color: hsl(241, 100%, 89%, 0.6);
+}
+
+/*Width of the description box into the footer of the left container */
+
+.result-description-container {
+    width: 15rem;
+}
+
+/*Style of the first text of the left container description box*/
+
+.result-description-container p:nth-child(1){
+    font-size: 1.7rem;
+    font-weight: 500;
+    margin-bottom: 0.8rem;
+    color: hsl(0, 0%, 100%);
+}
+
+/*Style of the second text of the left container description box*/
+
+.result-description-container p:nth-child(2){
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: hsl(241, 100%, 89%, 0.8);
+}
+
+/*Position and style of the right container*/
+
+.right-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: -25px;
+    z-index: 1;
+    gap: 30px;
+    height: 30rem;
+    width: 22rem;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    padding: 0px 70px;
+    background-color: hsl(0, 0%, 100%);
+}
+
+/*Font control and position of the right container header*/
+
+.right-container h1 {
+    margin: 10px 110px 0px 0px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: hsl(224, 30%, 27%)
+}
+
+/*Controll of the four boxes into the right container*/
+
+.reaction-container,
+.memory-container,
+.verbal-container,
+.visual-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 500;
+    margin: 15px 0px 15px 25px;
+    height: 3rem;
+    width: 15rem;
+    border-radius: 10px;
+}
+
+/*Controll of the background color and the text color of the four boxes*/
+
+.reaction-container {
+    color: hsl(0, 100%, 67%);
+    background-color: hsl(0, 100%, 67%, 0.2);
+}
+
+.memory-container {
+    color: hsl(39, 100%, 56%);;
+    background-color: hsl(39, 100%, 56%, 0.2);
+}
+
+.verbal-container {
+    color: hsl(166, 100%, 37%);;
+    background-color: hsl(166, 100%, 37%, 0.2);
+}
+
+.visual-container {
+    color: hsl(234, 85%, 45%);;
+    background-color: hsl(234, 85%, 45%, 0.2);
+}
+
+/*Align the icons vertically into the four boxes*/
+
+.reaction-container img,
+.memory-container img,
+.verbal-container img,
+.visual-container img {
+    margin: 0px 10px 0px 5px;
+    padding-bottom: 2px;
+    vertical-align: middle;
+}
+
+/*Add spacing left and right space into the boxes*/
+
+.reaction-container td,
+.memory-container td,
+.verbal-container td,
+.visual-container td {
+    margin: 0px 10px;
+}
+
+/*Colors and font weight of the right numbers into the boxes*/
+
+.reaction-container span:nth-last-child(1), 
+.memory-container span:nth-last-child(1),
+.verbal-container span:nth-last-child(1),
+.visual-container span:nth-last-child(1) {
+    font-weight: 500;
+    color: hsl(224, 30%, 27%, 0.5);
+}
+
+.reaction-container span:nth-last-child(2), 
+.memory-container span:nth-last-child(2),
+.verbal-container span:nth-last-child(2),
+.visual-container span:nth-last-child(2) {
+    font-weight: 700;
+    color: hsl(224, 30%, 27%);
+}
+
+/*Position of the continue button*/
+
+.continue-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 0px 0px 25px;
+    width: 15rem;
+    height: 3rem;
+    border-radius: 30px;
+    background-color: hsl(224, 30%, 27%);
+}
+
+.continue-button:hover {
+    background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+/*Style of the link into the continue button*/
+
+.continue-button a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15rem;
+    height: 3rem;
+    border-radius: 30px;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 768px) {
+
+    main {
+        display: block;
+    }
+
+/*Background shadow of the left and right container*/
+
+    .container-shadow {
+        display: block;
+        margin: auto;
+        height: 100vh;
+        width: 100vw;
+        box-shadow: none;
+        background-color: initial;
+    }
+
+/*Position and style of the left container*/
+
+    .left-container {
+        margin: auto;
+        gap: 15px;
+        height: 45vh;
+        width: 100vw;
+        border-radius: 0px 0px 25px 25px;
+    }
+
+/*Position and style of the left container circle box with the result of the test*/
+
+    .result-container {
+        margin: 25px 0px 10px 0px;
+        height: 10rem;
+        width: 10rem;
+    }
+
+/*Width of the description box into the footer of the left container */
+
+    .result-description-container {
+        overflow: hidden;
+        width: 100%;
+    }
+
+/*Position and style of the right container*/
+
+    .right-container {
+        margin: auto;
+        height: 55vh;
+        width: 100vw;
+        border-radius: initial;
+    }
+
+    .right-container h1 {
+        margin-right: 46vw;
+    }
+
+/*Controll of the four boxes into the right container*/
+
+    .reaction-container,
+    .memory-container,
+    .verbal-container,
+    .visual-container {
+        margin: 2vh 0 0 0;
+        width: 70vw;
+    }
+
+/*Position of the continue button*/
+
+    .continue-button {
+        margin: initial;
+        width: 70vw;
+    }
+}
