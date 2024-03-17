@@ -1,4 +1,4 @@
-# 😶‍🌫️ Frontend Mentor - Recipe page solution
+# 😶‍🌫️ Results Summary Component - Page Solution
 
 This is my first solution to the [Results summary component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV) and took me 6 hours to complete. Frontend Mentor challenges help you improve your coding skills by building realistic projects. If you are a beginner you really need to try this!
 
